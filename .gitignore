@@ -1,3 +1,5 @@
 /target
 /.cargo
 *.lock
+fleet.toml
+.idea
