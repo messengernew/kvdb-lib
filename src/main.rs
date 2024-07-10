@@ -17,5 +17,7 @@ async fn main() {
 
     database::run_all_tests().await;
 
+    // ----------------------------------------------------------------
+
     info!("czh stopped!");
 }
