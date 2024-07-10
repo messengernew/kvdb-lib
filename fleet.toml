@@ -1,5 +1,0 @@
-rd_enabled = true
-fleet_id = "ab375aa4-07fd-4bb7-b63f-dc8ee8416353"
-
-[build]
-sccache = "/home/quadrat/.cargo/bin/sccache"
