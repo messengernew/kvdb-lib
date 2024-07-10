@@ -8,13 +8,13 @@ Add `kvdb-lib` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-kvdb-lib = "0.1.0"
+kvdb-lib = "0.1.1"
 ```
 
 Add the following to your main file (`main.rs` or `lib.rs`):
 
 ```rust
-use storage_lib::Storage;
+use kvdb_lib::Storage;
 
 fn main() {
     let storage = Storage::new();
@@ -30,7 +30,7 @@ fn main() {
 Create a new `Storage` instance:
 
 ```rust
-use storage_lib::Storage;
+use kvdb_lib::Storage;
 
 let storage: Storage<i32, &str> = Storage::new();
 ```
@@ -40,7 +40,7 @@ let storage: Storage<i32, &str> = Storage::new();
 Insert a key-value pair:
 
 ```rust
-use storage_lib::Storage;
+use kvdb_lib::Storage;
 
 let storage = Storage::new();
 storage.set(1, "value1");
@@ -51,7 +51,7 @@ storage.set(1, "value1");
 Retrieve a value by its key:
 
 ```rust
-use storage_lib::Storage;
+use kvdb_lib::Storage;
 
 let storage = Storage::new();
 storage.set(1, "value1");
@@ -64,7 +64,7 @@ assert_eq!(storage.get(&1), Some("value1"));
 Remove a key-value pair:
 
 ```rust
-use storage_lib::Storage;
+use kvdb_lib::Storage;
 
 let storage = Storage::new();
 storage.set(1, "value1");
@@ -78,7 +78,7 @@ assert_eq!(storage.get(&1), None);
 Retrieve all key-value pairs:
 
 ```rust
-use storage_lib::Storage;
+use kvdb_lib::Storage;
 
 let storage = Storage::new();
 
