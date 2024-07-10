@@ -8,12 +8,9 @@ license = "MIT"
 repository = "https://github.com/messenger_qs/kvdb-lib"
 readme = "README.md"
 homepage = "https://github.com/messenger_qs/kvdb-lib"
-documentation = "https://docs.rs/kvdb-lib"
 
 [dependencies]
 dashmap = "6.0.1"
-tracing = "0.1.40"
-tracing-subscriber = "0.3.18"
 
 [profile.dev]
 opt-level = 0
