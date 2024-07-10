@@ -1,4 +1,4 @@
-use tracing::Level;
+use tracing::{info, Level};
 use tracing_subscriber::FmtSubscriber;
 mod database;
 
@@ -11,7 +11,11 @@ async fn main() {
     tracing::subscriber::set_global_default(subscriber)
         .expect("setting default subscriber failed");
 
+    info!("czh started!");
+
     // ----------------------------------------------------------------
 
     database::run_all_tests().await;
+
+    info!("czh stopped!");
 }

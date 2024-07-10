@@ -4,7 +4,7 @@ use tracing::{debug, info};
 // тесты писала нейросеть. все вопросы к ней.
 
 pub(crate) async fn test_speed(mut iterations: i32) {
-    if iterations <= 1000 { iterations = 100_000_000 }
+    if iterations <= 1000 { iterations = 10_000_000 }
     let iters: i32 = iterations;
 
     let storage = super::db::Storage::new();
