@@ -24,7 +24,7 @@ pub struct Storage<K, V> {
 impl<K, V> Storage<K, V>
 where
     K: Eq + std::hash::Hash + Clone + Copy,
-    V: Clone,
+    V: Clone + Copy,
 {
     /// Creates a new, empty `Storage`.
     ///
