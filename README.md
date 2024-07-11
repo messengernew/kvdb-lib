@@ -8,7 +8,7 @@ Add `kvdb-lib` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-kvdb-lib = "0.1.3"
+kvdb-lib = "0.1.4"
 ```
 
 Add the following to your main file:
