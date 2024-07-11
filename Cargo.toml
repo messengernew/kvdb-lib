@@ -8,6 +8,7 @@ license = "MIT"
 repository = "https://github.com/messengernew/kvdb-lib"
 readme = "README.md"
 homepage = "https://github.com/messengernew/kvdb-lib"
+documentation = "https://docs.rs/kvdb-lib"
 
 [dependencies]
 dashmap = "6.0.1"
