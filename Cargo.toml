@@ -1,13 +1,13 @@
 [package]
 name = "kvdb-lib"
-version = "0.1.1"
+version = "0.1.3"
 authors = ["messenger_qs 139318962+messengernew@users.noreply.github.com"]
 edition = "2021"
 description = "A simple thread-safe key-value storage library using DashMap."
 license = "MIT"
-repository = "https://github.com/messenger_qs/kvdb-lib"
+repository = "https://github.com/messengernew/kvdb-lib"
 readme = "README.md"
-homepage = "https://github.com/messenger_qs/kvdb-lib"
+homepage = "https://github.com/messengernew/kvdb-lib"
 
 [dependencies]
 dashmap = "6.0.1"

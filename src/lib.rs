@@ -9,10 +9,11 @@ use dashmap::mapref::one::Ref;
 ///
 ///
 
-/// use storage_lib::Storage;
+/// use kvdb_lib::Storage;
 ///
 /// let storage = Storage::new();
 /// storage.set(1, "value1");
+///
 /// assert_eq!(storage.get(&1), Some("value1"));
 ///
 
@@ -31,7 +32,7 @@ where
     ///
     ///
 
-    /// use storage_lib::Storage;
+    /// use kvdb_lib::Storage;
     ///
     /// let storage: Storage<i32, &str> = Storage::new();
     ///
@@ -51,10 +52,11 @@ where
     ///
     ///
 
-    /// use storage_lib::Storage;
+    /// use kvdb_lib::Storage;
     ///
     /// let storage = Storage::new();
     /// storage.set(1, "value1");
+    ///
     /// assert_eq!(storage.get(&1), Some("value1"));
     ///
 
@@ -68,10 +70,11 @@ where
     ///
     ///
 
-    /// use storage_lib::Storage;
+    /// use kvdb_lib::Storage;
     ///
     /// let storage = Storage::new();
     /// storage.set(1, "value1");
+    ///
     /// assert_eq!(storage.get(&1), Some("value1"));
     ///
 
@@ -85,12 +88,14 @@ where
     ///
     ///
 
-    /// use storage_lib::Storage;
+    /// use kvdb_lib::Storage;
     ///
     /// let storage = Storage::new();
+    ///
     /// storage.set(1, "value1");
     /// storage.set(2, "value2");
     /// let all = storage.get_all();
+    ///
     /// assert_eq!(all.len(), 2);
     /// assert!(all.contains(&(1, "value1")));
     /// assert!(all.contains(&(2, "value2")));
@@ -108,11 +113,13 @@ where
     ///
     ///
 
-    /// use storage_lib::Storage;
+    /// use kvdb_lib::Storage;
     ///
     /// let storage = Storage::new();
+    ///
     /// storage.set(1, "value1");
     /// storage.remove(1);
+    ///
     /// assert_eq!(storage.get(&1), None);
     ///
 

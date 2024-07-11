@@ -8,10 +8,10 @@ Add `kvdb-lib` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-kvdb-lib = "0.1.1"
+kvdb-lib = "0.1.3"
 ```
 
-Add the following to your main file (`main.rs` or `lib.rs`):
+Add the following to your main file:
 
 ```rust
 use kvdb_lib::Storage;
